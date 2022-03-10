@@ -1,0 +1,54 @@
+       ################################################################################
+       ## body numbers (note that for $Mb>0 the bulge will also add bodies)
+       set Nh=1200000       # number of bodies in halo
+       set Nd=200000        # number of disc bodies
+
+       ################################################################################
+       ## disc parameters
+       set Md=1             # disc mass
+       set Rd=1             # disc scale radius
+       set Zd=0.1           # disc scale height (rho ropto sech^2(z/Zd))
+       set Rsig=0           # if non-zero, rad. vel. disp. sigma ropto exp(-R/Rsig)
+       set Rdmax=4.5        # maximum disc radius
+       set Q=1.2            # Toomre's Q (const if Rsig=0, else value Q(Rsig)
+       set Nbpo=50          # number of disc bodies sampled per orbit
+       set ni=4             # number of iterations in disc sampling
+       set epsd=0.01        # gravitational softening length for disc bodies
+
+       ################################################################################
+       ## halo parameters
+       set Mh=24            # halo mass
+       set innerh=7/9       # halo inner logarithmic density slope
+       set outerh=31/9      # halo outer logarithmic density slope
+       set etah=4/9         # halo transition exponent
+       set Rcoreh=0         # halo core radius
+       set Rscaleh=
+       set Rh=6             # halo scale length
+       set Rth=60           # halo truncation radius
+       set betah=0          # halo anisotropy parameter
+       set r_ah=0           # halo anisotropy radius; 0 maps to infinity
+       set epsh=0.02        # gravitational softening length for halo bodies
+
+       ################################################################################
+       ## bulge parameters
+       set Mb=0.2           # bulge mass
+       set innerb=1         # bulge inner density exponent
+       set outerb=4         # bulge outer density exponent
+       set etab=1           # bulge transition exponent
+       set Rtb=0            # bulge truncation radius
+       set Rcoreb=0         # bulge core radius
+       set Rb=0.2           # bulge scale radius
+       set betab=0          # bulge anisotropy parameter
+       set r_ab=0           # bulge anisotropy radius; 0 maps to infinity
+
+       ################################################################################
+       ## Parameters controlling code
+       set kmax=3           # maximum timestep = 2^-kmax
+       set kmin=7           # minimum timestep = 2^-kmin
+       set fac=0.01         # time step control: tau < fac/|acc|
+       set fph=0.04         # time step control: tau < fph/|phi|
+       set tgrow=40         # Disc growth time
+       set seed=1           # seed for RNGs
+       set nmax=12          # maximum radial "quantum number" in potential expansion
+       set lmax=8           # maximum angular "quantum number" in potential expansion
+       set debug=2          # debug level used to run all falcON programs
