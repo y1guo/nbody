@@ -1,4 +1,4 @@
 cd small
-rm small-galaxy-merger.run.snp
-gyrfalcON in=small-galaxy-merger.snp out=small-galaxy-merger.run.snp tstop=50 step=0.1 kmax=6 eps=0.03 logfile=small-galaxy-merger.log
+rm small-antennae.run.snp small-antennae.log
+gyrfalcON in=small-antennae.snp out=small-antennae.run.snp tstop=3.5 step=0.005 kmax=12 eps=0.0002 logfile=small-antennae.log give=x
 
