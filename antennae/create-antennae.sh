@@ -1,4 +1,4 @@
-cd small
+cd regular
 rm base.snp scaled.snp rotated-*.snp shifted-*.snp antennae.snp
 magalie out=base.snp ndisk=150000 nbulge=50000 nhalo=800000 mbulge=1/3 mhalo=16/3
 snapscale in=base.snp out=scaled.snp mscale=1/5 rscale=1/12 vscale=1.549193338
