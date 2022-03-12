@@ -1,2 +1,2 @@
 cd regular
-glnemo2 in=antennae.run.snp select=0:149999,1000000:1149999, grid=f mesh_size=0.1 axis=f psize=1 point=t auto_render=f
+glnemo2 in=antennae.run.snp select=0:149999,1000000:1149999 osd=f perspective=f xrot=90 zrot=-45 wsize=3840 hsize=2160 point=f texture=t auto_ts=f texture_s=0.001 play=t
